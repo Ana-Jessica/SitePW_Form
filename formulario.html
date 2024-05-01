@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .conteiner {
+            height: auto;
+            width: 30vw;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: justify;
+        }
+
+        input {
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <form method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+            <label for="dt_nasc">Data de nascimento:</label>
+            <input type="date" id="dt_nasc" required><br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masc" name="sexo" value="masc">
+            <label for="masc">Masc</label>
+            <input type="radio" id="fem" name="sexo" value="fem">
+            <label for="fem">Fem</label>
+            <input type="radio" id="prefiro_nao_informar" name="sexo" value="prefiro_nao_informar">
+            <label for="prefiro_nao_informar">Prefiro não informar</label><br>
+            <label for="ender">Endereço:</label>
+            <input type="text" id="ender" required><br>
+            <label for="logra">Logradouro:</label>
+            <input type="text" id="logra" required><br>
+            <label for="bairros">Bairro:</label>
+            <input type="text" id="bairros" required><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required><br>
+            <label for="estados">UF:</label>
+            <input list="estados" required>
+            <datalist id="estados">
+                <option value="Acre">
+                <option value="Alagoas">
+                <option value="Amapá">
+                <option value="Amazonas">
+                <option value="Bahia">
+                <option value="Ceará">
+                <option value="Distrito Federal">
+                <option value="Espírito Santo">
+                <option value="Goiás">
+                <option value="Maranhão">
+                <option value="Mato Grosso">
+                <option value="Mato Grosso do Sul">
+                <option value="Minas Gerais">
+                <option value="Pará">
+                <option value="Paraíba">
+                <option value="Paraná">
+                <option value="Pernambuco">
+                <option value="Piauí">
+                <option value="Rio de Janeiro">
+                <option value="Rio Grande do Norte">
+                <option value="Rio Grande do Sul">
+                <option value="Rondônia">
+                <option value="Roraima">
+                <option value="Santa Catarina">
+                <option value="São Paulo">
+                <option value="Sergipe">
+                <option value="Tocantins">
+            </datalist><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="conteiner">
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome"><br>
+                <label for="dt_nasc">Data de Nascimento: </label>
+                <input type="text" name="dataNascimento" placeholder="dd / mm / aaaa"><br>
+                <label>E-mail: </label>
+                <input type="email" name="email"><br>
+                <label>Telefone: </label><input type="tel" name="telefone">
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados acadêmicos</legend>
+                <label for="curso">Curso:</label>
+                <input list="curso">
+                <datalist id="curso">
+                    <option value="ADS">
+                    <option value="Ciência de dados">
+                    <option value="Segurança da informação">
+                    <option value="Inteligencia artificial">
+                    <option value="Banco de dados">
+                </datalist><br>
+
+                <label for="sem">Semestre: </label>
+                <input type='radio' id='semestre1' name='semestre' value='1'>
+                <label for="1">1°</label>
+                <input type='radio' id='semestre2' name='semestre' value='2'>
+                <label for="2">2°</label>
+                <input type='radio' id='semestre3' name='semestre' value='3'>
+                <label for="3">3°</label>
+                <input type='radio' id='semestre4' name='semestre' value='4'>
+                <label for="4">4°</label>
+                <input type='radio' id='semestre5' name='semestre' value='5'>
+                <label for="5">5°</label><br>
+            </fieldset>
+
+            <label for="trab">Trabalha?</label>
+            <input type="checkbox" name="trabalha" value="sim">
+            <label for="Ltrabalho">Local de trabalho: </label>
+            <input type="text" name="localTrabalho"><br>
+            <label for="exp">Descreva sua experiência: </label><br>
+            <textarea rows="4" cols="60" name="experiencia"></textarea><br>
+
+            <input type="submit" value="Gravar">
+            <input type="reset" value="Limpar">
+        </form>
+
+    </div>
+</body>
+
+</html>
